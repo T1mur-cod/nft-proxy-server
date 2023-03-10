@@ -8,7 +8,7 @@ const PORT = 5001;
 app.use(cors());
 
 app.get('/', (req, res) => {
-  const url = 'https://cors-anywhere.herokuapp.com/https://data.ifiniti.co/ifc/ed348259-5864-440b-a4c5-523657361ede.json';
+  const url = 'https://data.ifiniti.co/ifc/ed348259-5864-440b-a4c5-523657361ede.json';
   const options = {
     url: url,
     headers: {
