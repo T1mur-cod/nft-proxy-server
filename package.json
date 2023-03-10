@@ -1,0 +1,27 @@
+{
+  "name": "nft-proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T1mur-cod/nft-proxy-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T1mur-cod/nft-proxy-server/issues"
+  },
+  "homepage": "https://github.com/T1mur-cod/nft-proxy-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  }
+}
