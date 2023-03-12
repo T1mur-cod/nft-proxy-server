@@ -13,7 +13,7 @@ app.use(morgan('dev'))
 app.get('/', (req, res) => {
   const url = process.env.API_URL;
   const options = {
-    url: url,
+    uri: url,
     headers: {
       'Origin': 'http://localhost:5001'
     }
