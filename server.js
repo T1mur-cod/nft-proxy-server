@@ -1,14 +1,17 @@
 const express = require('express');
 const request = require('request');
+const morgan = require('morgan');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 app.use(cors());
+app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
-  const url = 'https://data.ifiniti.co/ifc/ed348259-5864-440b-a4c5-523657361ede.json';
+  const url = process.env.API_URL;
   const options = {
     url: url,
     headers: {
@@ -19,5 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Сервер запущен на порту ${PORT}`);
 });
+
+
